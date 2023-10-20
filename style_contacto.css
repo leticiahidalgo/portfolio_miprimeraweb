@@ -1,0 +1,361 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+  /*Estilos generales de la estructura del grid*/
+	.contenedor{
+		display: grid;
+		grid-template-areas:
+			"nav"
+			"header"
+			"main" 
+            "aside"
+			"footer";
+		grid-template-rows: 100px 100px 1fr 250px 120px;
+		margin: 0 auto;
+	}
+
+	nav{
+		grid-area: nav;
+		background-color: white;
+		font-weight:bold;
+	}
+
+	header{
+		grid-area: header;
+		background-color: #B6FCF3;
+		text-align: center;
+		font-size: 1.6rem;
+		font-style: italic;
+    }
+
+	header p {
+		max-width: 70%;	
+		margin: 0 auto;
+		line-height: 200%;
+		font-weight:bold;
+	}
+
+	main{
+		grid-area: main;
+		background-color: #B6FCF3;
+	}
+
+    aside{
+		grid-area: aside;
+		background-color: #E7CCFE;
+		padding:1rem;
+		text-align: center;
+	}
+			
+	section{
+		background-color: #f2f2f2;
+		padding:1rem;
+		margin:1rem;
+		font-size: 1.2rem;
+	}
+
+	footer{
+		grid-area: footer;
+		background-color: #f2f2f2;
+		padding:1rem;
+		text-align: center;
+	}
+
+	/*Estilos de la barra de navegación*/
+	.nav {
+		width: 100%;
+  		position: fixed;
+  		top: 0;
+  		left: 0;
+		height: 100px;
+		float: left;
+		margin-top: 0;
+		z-index: 100;
+	}
+
+	nav ul {
+		padding: 0;
+		list-style-type: none;
+		flex: 2;
+		display: flex;
+	}
+
+	nav li {
+		display: inline;
+		text-align: center;
+		float: left;
+		flex: 1;
+		
+	}
+
+	nav a {
+		display: inline-block;
+		margin-top: 1em;
+		font-size: 1.3rem;
+		text-transform: capitalize;
+		text-decoration: none;
+		color:#951EDB;
+	}
+	
+	nav li a:hover {
+		background-color: #b3e4ec;
+		border-radius:5px;
+	}
+
+	/*Estilos barra búsqueda*/
+	.searchbox{
+		height:1.4em;
+		margin:1.4em;
+		display:flex;
+		float: right;
+		padding-right: 0, 20px;
+	}
+	
+	.searchbox button{
+		border-radius:7px;
+		cursor:pointer;
+	}
+
+	.highlight {
+		background-color: yellow;
+	}
+
+	/*EStilos titulos*/
+
+	h1,h2,h3{
+		font-family: 'Montserrat', sans-serif;
+		text-align:center;
+	}
+
+	h1{
+		color:#951EDB;
+		font-size: 3rem;
+		text-shadow: 4px 4px 10px  #656768;
+	}
+	/*Animación del h1*/
+	@keyframes fadeInAndRotate {
+		from {
+		  opacity: 0;
+		  transform: rotateX(90deg);
+		  transform-origin: bottom;
+		}
+		to {
+		  opacity: 1;
+		  transform: rotateX(0deg);
+		}
+	  }
+	
+	h2{
+		font-size: 2rem;
+		padding: 1em;
+	}
+
+	.logo {
+		display:flex;
+		float: left;
+		padding-left: 20px;
+		height:100px;
+	}
+	
+	section{
+		padding-left: 5rem;
+		padding-right: 5rem;
+		text-align:center;
+	}
+
+	.postheader{
+        border-radius: 20px;
+    }
+	 
+	  
+	/*Estilos  del formulario*/
+				
+	form {
+		background:#dddddd;
+		display:grid;
+		padding:1em;
+		margin:auto;
+		max-width:30rem;
+		justify-content:center;
+		border: .4em groove gray;
+		border-radius: 10px;
+		box-shadow: 10px 5px 5px gray;
+	}
+
+	.enviar {
+		background-color:green;
+		color: white;
+		padding: 10px 20px;
+		border-radius: 5px;
+	}
+	
+	.reset {
+		background-color:#FD4A57;
+		color: white;
+		padding: 10px 20px;
+		border-radius: 5px;
+	}
+	
+	#contacto {
+		background-color:#B6FCF3;
+	}
+
+	/* Estilos para sección redes */
+	
+	.redes{
+	background-color:#E7CCFE;	
+	}	
+	
+	.redes p{
+	text-align:center;
+	}
+	
+	.flexbox{
+	  display:flex;
+	  justify-content:center;  
+	  align-items:center;  
+	}
+  
+	.cont-flexbox{
+		display:flex;  
+		justify-content:center;  
+		align-items:center;  
+		align-content: center; 
+		text-align:center;
+		padding:10px;
+		margin:10px;
+		flex-wrap:wrap;
+	}
+      
+	[class^="caja"]{
+		display:flex;  
+		justify-content:center;  
+		align-items:center;  
+		align-content: center; 
+		text-align:center;
+		margin:10px;
+	}
+
+
+	/*Estilos específicos del footer*/
+	
+	footer {
+		display:flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	footer-content{
+		display: flex;
+		will-change: 100%;
+		margin-right: 1em;
+		justify-content: center;
+		align-items: center;
+	}
+
+	footer-item {
+		flex:1;
+	}
+
+	footer-item a{
+		display: inline-block;
+		justify-content: center;
+		align-items: center;		
+	}
+
+	footer a:hover {
+		color: rgb(129, 25, 214);
+	}
+	
+	.flecha {
+		position:fixed;
+		right:0;
+		bottom:0;
+		margin-right:20px;
+		margin-bottom:20px;
+		opacity:0.7;
+	}
+
+	.flecha:hover {
+		opacity:1
+	}
+
+	/*Estilos política de cookies*/
+
+	.cookies{
+		display:none;
+		background-color: rgb(236, 253, 255);
+		padding: 20px;
+		width: calc(100%-40px);
+		max-width: 350px;
+		line-height: 150%;
+		border-radius: 10px;
+		position: fixed;
+		bottom:20px;
+		right: 15px;
+		z-index:100;
+		padding-top: 60px;
+		box-shadow:0px 2px 20px 10px rgba(222,222,222,.25);
+		text-align: center;
+	}
+
+	.cookies.activo{
+		display:block;
+	}
+	
+	.cookies .galleta{
+		max-width: 100px;
+		position: absolute;
+		top:-5px;
+		left: calc(50% - 50px);
+	}
+
+	.cookies .p-cookies{
+		margin-bottom: 10px;
+		font-size: 12px;
+	}
+
+	.buton-acept-cookies{
+		width:80%;
+		background-color:rgb(96, 149, 173);
+		border:none;
+		color:white;
+		text-align: center;
+		padding: 15px 20px;
+		font-weight: 700;
+		cursor:pointer;
+		transition: 3. ease all;
+		border-radius: 5px;
+		margin-bottom: 5px;
+	}
+
+	.buton-acept-cookies:hover{
+		background-color: rgb(124, 10, 134);
+	}
+
+	.link-cookies{
+		color:DarkTurquoise;
+		text-decoration: none;
+		font-size: 12px;
+	}
+
+	.link-cookies:hover{
+		text-decoration: underline;
+	}
+
+	.fondo-cookies{
+		display:none;
+		background: rgba(0,0,0,.20);
+		position: fixed;
+		z-index: 99;
+		width: 100vw;
+		height: 100vh;
+		top:0;
+		left:0;
+	}
+
+	.fondo-cookies.activo{
+		display:block;
+	}
