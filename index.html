@@ -5,11 +5,11 @@
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
-		<title>Home proyecto final</title>
+		<title>Leticia Hidalgo - Marketing digital</title>
 		
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
 		
-		<link rel="icon" sizes="48x48" type="image/png" href="images/favicon.png" /> 
+		<link rel="icon" sizes="48x48" type="image/png" href="images/favicon_redondo.png" /> 
 		
 		<link rel="canonical" href="https://www.dominio.com" />
 		
@@ -20,8 +20,11 @@
 		<meta name="author" content="Leticia Hidalgo"/>
 		
 		<meta name="copyright" content="Leticia Hidalgo"/>
+
+		<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 		
 		<script defer src="js/home.js"></script>
+
 	
 </head>
 <body>
@@ -31,14 +34,16 @@
 		
 		<nav class="nav">
 			<div class="logo">
-				<img src="images/logo.png" alt="Logo">
+				<a href="https://lehimo.cursosaprendo.com" target="_blank"><img src="images/logo.png" class="logo" alt="Logo"></a>
 			</div>
 			<ul>
-				<li><a href="#inicio">Inicio</a></li>
+				
 				<li><a href="#acerca">Sobre mí</a></li>
 				<li><a href="#servicios">Servicios</a></li>
-				<li><a href="#">Blog</a></li>
-				<li><a href="#contacto">Contacto</a></li>
+				<li><a href="blog.html" target="_blank">Blog</a></li>
+				<li><a href="contacto.html" target="_blank">Contacto</a></li>
+				<li><a href="https://lehimo.cursosaprendo.com/tienda" target="_blank">🛒 Mis cursos</a></li>
+				
 
 				<div class="searchbox">	
 					<input type="text" id="searchText" placeholder="Buscar texto">&nbsp
@@ -71,7 +76,7 @@
 			
 			<section class="acerca">
 			
-				<h2 id="acerca">Sobre mí</h2>
+				<h2 class="slide-in" id="acerca">Sobre mí</h2>
 
 				<div class="grid-acerca">
 
@@ -81,7 +86,7 @@
 					</div>
 				
 					<div class="acerca-texto">
-					<p>¡Hola! Soy María, la mente creativa detrás de este mundo mágico de diseño web y copywriting</p>
+					<p>¡Hola! Soy Leticia, la mente creativa detrás de este mundo mágico de diseño web y copywriting.</p>
 
 					<p>Desde muy joven, siempre supe que mi pasión era crear y comunicar de manera impactante. Con una mezcla única de imaginación y habilidades técnicas, encontré mi verdadero amor en el diseño web y las palabras que transforman.</p>
 
@@ -89,13 +94,15 @@
 					
 					<p>Con años de experiencia en el campo y una mente inquieta, siempre estoy en busca de las últimas tendencias y estrategias que marcan la diferencia. Me apasiona ayudarte a alcanzar tus objetivos y convertir tu visión en una realidad asombrosa.</p>
 					
-					<p>Cuando no estoy detrás de mi computadora, me encontrarás disfrutando de un buen café mientras dibujo bocetos de nuevas ideas o explorando la naturaleza en busca de inspiración.</p>
+					<p>Cuando no estoy detrás de la pantalla de mi ordenador, me encontrarás disfrutando de unas galletas caseras saludables o haciendo fotos explorando la naturaleza en busca de inspiración.</p>
 
 					<p>Me siento afortunada de poder hacer lo que amo y trabajar contigo para hacer crecer tu negocio.</p>
 					
 					<p>¡Estoy emocionada de conocerte y ser parte de tu viaje hacia el éxito en línea! </p>
 
-					<p>Así que, ¿qué dices? ¿Empezamos a hacer realidad tus sueños digitales juntos?</p>
+					<p>Así que... ¿qué dices? </p>
+
+					<p>¿Empezamos a hacer realidad tus sueños digitales juntos?</p>
 					</div>
 
 			</div>
@@ -103,9 +110,9 @@
 			
 			<section class="servicios">
 			
-				<h2 id="servicios">Esta es la forma en la que puedo ayudarte:</h2>
+				<h2 class="slide-in" id="servicios">Esta es la forma en la que puedo ayudarte:</h2>
 				<div class="serviciodiseño">
-				<img src="images/codigo.jpg" title="Servicio de diseño web" alt="imagen de una pantalla con código de programación"></img>
+				<img src="images/web-design.jpg" title="Servicio de diseño web" alt="imagen de una pantalla con código de programación"></img>
 				
 				<h3 class="tit-diseño">"Diseño web"</h3>
 				
@@ -116,7 +123,7 @@
 				</div>
 				<br><br>
 				<div class="serviciocopy">
-				<img src="images/teclado.jpg" title="Servicio de diseño web" alt="imagen de una pantalla con código de programación"></img>
+				<img src="images/tecleando.jpg" title="Servicio de diseño web" alt="imagen de una pantalla con código de programación"></img>
 				
 				<h3 class="tit-copy">"Copywriting"</h3>
 				
@@ -133,61 +140,47 @@
 			</section>
 
 			<section class="work">
-				<h2>Así es como trabajaremos:</h2>
-				<ol>
-					<li>Rellena el formulario</li>
-					<li>Me pongo en contato contigo</li>
-					<li>Comienzo a trabajar</li>
-					<li>Verás el borrador para modificar lo que haga falta</li>
-					<li>Te entrego la versión final</li>
-				</ol>
+				<h2 class="slide-in">Así es como trabajaremos:</h2>
+				<ul class="animated-list">
+					<li class="number-li">1º</li>
+					<li class="number-li">2º</li>
+					<li class="number-li">3º</li>
+					<li class="number-li">4º</li>
+					<li class="number-li">5º</li>
+					<li class="img-li"><img src="images/work_1.png" title="formulario" alt="imagen de un formulario"></img></li>
+					<li class="img-li"><img src="images/work_2.png" title="contactando" alt="conversación entre dos personas"></img></li>
+					<li class="img-li"><img src="images/work_3.png" title="formulario" alt="imagen de un formulario"></img></li>
+					<li class="img-li"><img src="images/work_4.png" title="formulario" alt="imagen de un formulario"></img></li>
+					<li class="img-li"><img src="images/work_5.png" title="formulario" alt="imagen de un formulario"></img></li>
+					<li class="text-li">Lo primero es que rellenes el formulario de contacto (lo tienes a continuación)</li>
+					<li class="text-li">Me pongo en contato contigo y hablamos para ver qué necesitas exactamente</li>
+					<li class="text-li">Cuando tengamos bien definido el proyecto comienzo a trabajar</li>
+					<li class="text-li">Te muestro el primer borrador y vemos posibles mejoras</li>
+					<li class="text-li">Después de hacer las modificaciones oportunas te entrego la versión final</li>
+				</ul>
 			</section>	
 			
 			<section id="contacto">
 			
-			<h2>¿Trabajamos juntos?</h2>
+			<h2 class="slide-in">¿Trabajamos juntos?</h2>
 			
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor.</p>
+			<p>No dudes en contactar conmigo, bien sea porque tienes alguna duda o pregunta sobre mis servicios de diseño web y copywriting o bien porque lo tienes más claro que el agua y no quieres perder más tiempo en comenzar a digitalizar tu negocio.</p>
+			<p>Juntos podemos crear una estrategia personalizada para que alcances tus metas.</p>
+			<p>Así que ...</p>
+			<p>¡No esperes más y pincha en el botón que tienes a continuación!</p>
+			
 			<br>
 			
-				<form> 
-					<p><b>Para contactar conmigo rellena este formulario:</b></p>
-					<br>
-					<label for="name">Nombre:</label>
-					<input type="text" placeholder="Como quieres que te llame" required>
-					<br>
-					<label for="date">Fecha de nacimiento:</label>
-					<input type="date" placeholder="fecha de nacimiento">
-					<br>
-					<label for="tel">Número de teléfono:</label>
-					<input type="tel" placeholder="El que coges siempre">
-					<br>
-					<label for="email">Email de contacto:</label>
-					<input type="email" placeholder="El que abres todos los días" required>
-					<br>
-					<label for="encontrar">Cómo me has encontrado:</label>
-					<select name="encontrar" id="encontrar">
-						
-						  <option value="recomendacion">Por recomendación de un conocido</option>
-						  <option value="rrss">Te he encontrado en redes sociales</option>
-						  <option value="web">He buscado en internet</option>
-						 					   
-					</select>
-					<br>
-					<label for="comentario">Cuéntame qué necesitas:</label><br>
-					<textarea id="comentario" name="comentario" rows="5" cols="50" maxlength="500"></textarea>
-					<br>
-					<div style="text-align: right;">
-					<input type="reset" class="reset" value="Borrar formulario">&nbsp;&nbsp;
-					<button type="submit" class="enviar" value="enviar">Enviar</button>
-					</div>
-				</form>
-				<br>
+			<a href="contacto.html" target="_blank" class="cta_formulario">¡Voy a contactar contigo ahora mismo!</a>
+				
+			<br><br>
+
+			<p class="aclaracion-boton">(En un plazo de 1 o 2 días laborables me pondré en contacto contigo y vemos como podemos colaborar juntos.)</p>
 			</section>
 
 			<section class="faqs">
 				
-				<h2>¿Aún no tienes claro si esto es lo que tu negocio necesita?</h2>
+				<h2 class="slide-in">¿Aún no tienes claro si esto es lo que tu negocio necesita?</h2>
 			
 				<p>Por si te sirve de ayuda, aquí te dejo las preguntas que más me suelen hacer.</p>
 				<br>
@@ -215,43 +208,25 @@
 				</div>
 			  </section>
 			
-			
 		</main>	
 
 		<aside class="aside">
 		
-		
-		<h2>Artículos destacados:</h2>
-				
-		<article class="article1">
-			
-				<h4>Título artículo de blog</h4>
-				<div class="article1">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</p>
-				<a href="#">Seguir leyendo...</a>
-				</div>
-			</article>
-			
-			<article class="article2">
-			
-				<h4>Título artículo de blog</h4>
-				<div class="article2">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</p>
-				<a href="#">Seguir leyendo...</a>
-				</div>
-				
-			</article>
-			<div class="enlaceblog">
-			<a href="#" >Leer más artículos...</a>
-			</div>
-			<br>
-			
 		<section class="portfolio">
 		
-			<h2>Algunos de mis trabajos:</h2>
-			<p>Te dejo una pequeña muestra en vídeo de algunos de los trabajos realizados.</p>
+			<h2 class="slide-in">Algunos de mis trabajos:</h2>
+			
+			<p>En este carrusel de imagenes puedes ver una pequeña muestra de algunos de mis trabajos realizados.</p>
 		
-			<video src="media/tecleando.mp4" title="vídeo de una persona tecleando" alt="vídeo de una persona tecleando" width="600" height="400" controls allowfullscreen loop muted autoplay/>
+			<div id="slider">
+				<div><img src="images/slider_1.png"/></div>
+				<div><img src="images/slider_2.png"/></div>
+				<div><img src="images/slider_3.png"/></div>
+				<div><img src="images/slider_4.png"/></div>
+				<div><img src="images/slider_5.png"/></div>
+				
+				
+			</div>
 		</section>
 
 		<section id="empresas">
@@ -282,37 +257,68 @@
 				</div>
 			</div>
 			</section>
-		
-		<section class="redes">
-			<h3>Aquí tienes más contenido para consultar:</h3>
-			<p>Estas son mis redes sociales en las tienes más contenido, si te gusta lo que ves no te olvides de seguirme.</p>
-			<div class="flexbox"> 
-				<div class="cont-flexbox"> 
-										
-					<div class="caja-1">
-					<a href="https://es-es.facebook.com/" target="_blank">
-					<img align="center" src="images/facebook.png" width="55" height="55"></img></a>
-					</div>
 
-					<div class="caja-2">
-					<a href="https://www.instagram.com/" target="_blank">
-					<img align="center" src="images/instagram.png" width="55" height="55"></img></a>
-					</div>
-
-					<div class="caja-3">
-					<a href="https://twitter.com/?lang=es" target="_blank">
-					<img align="center" src="images/twitter.png" width="55" height="55"></img></a>
-					</div>
-					
-					<div class="caja-4">
-					<a href="https://es.linkedin.com/?src=go-pa&trk=sem-ga_campid.18146679037_asid.140850334975_c" target="_blank">
-					<img align="center" src="images/linkedin.png" width="55" height="55"></img></a>
-					</div>
-					
-					
+		<h2 class="slide-in">Artículos destacados:</h2>
+				
+		<article class="article">
+			
+			<div class="grid-container-article">
+				<div class="grid-item-article">
+					<img src="images/blog_1.jpg" alt="Imagen 1">
+					<h4>5 Principales tendencias de diseño web para el 2023</h4>
+					<p>Exploraremos las tendencias más emocionantes en diseño web que están moldeando la apariencia y la funcionalidad de los sitios web modernos, desde el uso audaz de colores hasta la integración de animaciones impactantes.</p>
+					<a href="blog.html" target="_blank">Seguir leyendo...</a>
+				</div>
+				<div class="grid-item-article">
+					<img src="images/blog_9.jpg" alt="Imagen 9">
+					<h4>La importancia del diseño "responsive" en la era móvil</h4>
+					<p>El diseño "responsive" es esencial en el mundo actual centrado en dispositivos móviles, por eso te cuento cómo impacta en la experiencia del usuario y cómo implementarlo efectivamente para alcanzar a tu audiencia dondequiera que estén.</p>
+					<a href="blog.html" target="_blank">Seguir leyendo...</a>
+				</div>
+				<div class="grid-item-article">
+					<img src="images/blog_3.jpg" alt="Imagen 3">
+					<h4>13 consejos para crear una página de inicio impactante</h4>
+					<p>Descubre cómo capturar instantáneamente la atención de tus visitantes con una página de inicio que refleje la esencia de tu marca, utilizando elementos visuales y mensajes precisos.</p>
+					<a href="blog.html" target="_blank">Seguir leyendo...</a>
 				</div>
 			</div>
-		</section>
+				
+			</article>
+			<div class="enlaceblog">
+			<a href="blog.html" target="_blank">Leer más artículos...</a>
+			</div>
+			<br>
+
+			<section class="redes">
+				<h3>Aquí tienes más contenido para consultar:</h3>
+				<p>Estas son mis redes sociales en las tienes más contenido, si te gusta lo que ves no te olvides de seguirme.</p>
+				<div class="flexbox"> 
+					<div class="cont-flexbox"> 
+											
+						<div class="caja-1">
+						<a href="https://es-es.facebook.com/" target="_blank">
+						<img align="center" src="images/facebook.png" width="55" height="55"></img></a>
+						</div>
+	
+						<div class="caja-2">
+						<a href="https://www.instagram.com/" target="_blank">
+						<img align="center" src="images/instagram.png" width="55" height="55"></img></a>
+						</div>
+	
+						<div class="caja-3">
+						<a href="https://twitter.com/?lang=es" target="_blank">
+						<img align="center" src="images/twitter.png" width="55" height="55"></img></a>
+						</div>
+						
+						<div class="caja-4">
+						<a href="https://es.linkedin.com/?src=go-pa&trk=sem-ga_campid.18146679037_asid.140850334975_c" target="_blank">
+						<img align="center" src="images/linkedin.png" width="55" height="55"></img></a>
+						</div>
+						
+						
+					</div>
+				</div>
+			</section>
 				
 		</aside>
 		
@@ -326,15 +332,17 @@
 			<div class="footer-contenido">
 				<div class="footer-item">
 			
-				<a href="#">Aviso Legal</a>&nbsp;&nbsp;&nbsp;
-				<a href="#">Política de privacidad</a>&nbsp;&nbsp;&nbsp;
-				<a href="#">Política de cookies</a>
+				© 2023 Leticia Hidalgo  &nbsp;| &nbsp;
+				<a href="aviso-legal.html" target="_blank">Aviso Legal</a>&nbsp;&nbsp;&nbsp;| &nbsp;
+				<a href="politica-privacidad.html" target="_blank">Política de privacidad</a>&nbsp;&nbsp;&nbsp;| &nbsp;
+				<a href="politica-cookies.html" target="_blank">Política de cookies</a>
 				</div>
 				<br>
 				<div class="footer-item">
 
 				<a href="https://wa.me/+34666123456" target="_blank">
 				<img align="center" src="images/logo-whatsapp.png" width="55" height="55"></img></a>&nbsp;
+				
 	
 				<a href="mailto:leticia23curso@gmail.com" target="_blank">
 				<img align="center" src="images/logo-mail.png" width="40" height="40"></img></a>&nbsp;&nbsp;&nbsp;
@@ -344,6 +352,17 @@
 				</div>
 				
 			</div>
+
+			<div class="cookies" id="cookies">
+				<img class="galleta" src="images/cookies.png" alt="galleta">
+				<h4 class="p-cookies">Lástima que estas cookies no se coman...</h4>
+				<p class="p-cookies">Utilizo cookies propias y de terceros con la finalidad de mejorar los servicios y la experiencia de usuario. Si sigues navegando considero que estas de acuerdo con su uso.</p>
+				<button class="buton-acept-cookies" id="buton-acept-cookies">Aceptar</button>
+				<button class="buton-acept-cookies" id="buton-acept-necesarias">Sólo necesarias para navegar</button>
+				<br>
+				<a class="link-cookies" href="politica-cookies.html" target="_blank">Política de cookies</a>
+			  </div>
+			  <div class="fondo-cookies" id="fondo-cookies"></div>
 								
 		</footer>
 	</div>
